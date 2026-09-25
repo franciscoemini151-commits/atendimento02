@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo em Foco</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#080b18;color:#f4f5ff;line-height:1.7}
+a{text-decoration:none;color:inherit}header{padding:24px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #252a43}
+.logo{font-weight:800;letter-spacing:3px}nav{display:flex;gap:28px;color:#b9bfdc;font-size:.9rem}nav a:hover{color:white}
+.hero{padding:90px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;background:radial-gradient(circle at 75% 40%,#29356f,#11162e 35%,#080b18 70%)}
+.kicker{color:#7ed7ff;text-transform:uppercase;letter-spacing:4px;font-size:.75rem;font-weight:bold}
+h1{font-size:clamp(3.2rem,7vw,6.5rem);line-height:.92;margin:18px 0 25px}.hero p{max-width:620px;color:#c4c9df;font-size:1.15rem}
+.cta{display:inline-block;margin-top:30px;padding:14px 24px;background:white;color:#101326;border-radius:30px;font-weight:bold}
+.orbit{height:360px;width:360px;border:1px solid #4d598e;border-radius:50%;margin:auto;position:relative;box-shadow:0 0 80px #303b7a}
+.orbit:before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#8d9cff 35%,#3946a0 70%,#151a43);top:105px;left:105px;box-shadow:0 0 70px #6575ff}
+.moon{position:absolute;width:28px;height:28px;background:#d9dded;border-radius:50%;top:25px;left:55px;box-shadow:0 0 20px #fff}
+section{padding:85px 7%;max-width:1200px;margin:auto}.section-title{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:35px}
+.section-title h2{font-size:2.5rem}.section-title p{color:#969dbb;max-width:430px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid #272d4a;background:#10152a;border-radius:18px;min-height:230px}
+.number{font-size:.75rem;color:#6ed5ff;letter-spacing:2px}.card h3{font-size:1.35rem;margin:25px 0 12px}.card p,.event p{color:#aeb4cd}
+.timeline{border-left:2px solid #38416a;margin-left:12px;padding-left:35px;display:grid;gap:35px}.event{position:relative}.event:before{content:"";position:absolute;width:12px;height:12px;background:#7ed7ff;border-radius:50%;left:-42px;top:6px;box-shadow:0 0 15px #7ed7ff}.event span{color:#7ed7ff;font-size:.8rem;font-weight:bold}.event h3{margin:7px 0}
+.fact{margin:0 auto 80px;max-width:1060px;padding:55px;border-radius:24px;background:linear-gradient(120deg,#1b2552,#10152c);display:grid;grid-template-columns:1fr 1fr;gap:30px}.fact h2{font-size:2.3rem}.fact p{color:#c1c6da}
+footer{padding:40px 7%;border-top:1px solid #242943;color:#858ba8;display:flex;justify-content:space-between}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr}.orbit{width:280px;height:280px}.orbit:before{width:120px;height:120px;top:80px;left:80px}.cards{grid-template-columns:1fr}.section-title,.fact{display:grid;grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="logo">UNIVERSO EM FOCO</div><nav><a href="#inicio">Início</a><a href="#descobertas">Descobertas</a><a href="#linha">Linha do tempo</a><a href="#curiosidades">Curiosidades</a></nav></header>
+<main>
+<section class="hero" id="inicio"><div><div class="kicker">Exploração • Ciência • Descoberta</div><h1>Além do que podemos ver.</h1><p>O universo é formado por bilhões de galáxias, estrelas, planetas e fenômenos que ainda despertam perguntas. Explore alguns dos mistérios e descobertas que ajudam a entender o espaço.</p><a class="cta" href="#descobertas">Começar a explorar →</a></div><div class="orbit"><div class="moon"></div></div></section>
+<section id="descobertas"><div class="section-title"><h2>Grandes descobertas</h2><p>Conheça conceitos fundamentais que transformaram nossa maneira de observar o cosmos.</p></div><div class="cards">
+<article class="card"><span class="number">01 — GALÁXIAS</span><h3>Ilhas de estrelas</h3><p>Galáxias reúnem estrelas, gás, poeira e matéria escura mantidos juntos pela gravidade.</p></article>
+<article class="card"><span class="number">02 — ESTRELAS</span><h3>Fábricas cósmicas</h3><p>As estrelas produzem energia por fusão nuclear e ajudam a formar elementos essenciais para o universo.</p></article>
+<article class="card"><span class="number">03 — EXOPLANETAS</span><h3>Mundos distantes</h3><p>Exoplanetas são planetas que orbitam outras estrelas e podem ter características muito diferentes das do Sistema Solar.</p></article>
+</div></section>
+<section id="linha"><div class="section-title"><h2>Uma breve linha do tempo</h2><p>Momentos importantes da exploração espacial e da astronomia moderna.</p></div><div class="timeline">
+<div class="event"><span>1957</span><h3>Primeiro satélite artificial</h3><p>O Sputnik 1 marcou o início da era dos satélites artificiais.</p></div>
+<div class="event"><span>1969</span><h3>Humanos na Lua</h3><p>A missão Apollo 11 levou os primeiros seres humanos à superfície lunar.</p></div>
+<div class="event"><span>1990</span><h3>Um novo olhar para o cosmos</h3><p>O telescópio espacial Hubble ampliou o conhecimento sobre o universo.</p></div>
+<div class="event"><span>ATUALIDADE</span><h3>Novas fronteiras</h3><p>Novos telescópios e missões continuam estudando as origens e os mistérios do cosmos.</p></div>
+</div></section>
+<div class="fact" id="curiosidades"><div><div class="kicker">Você sabia?</div><h2>A luz também conta histórias.</h2></div><p>Quando observamos objetos muito distantes, recebemos luz que levou anos, milhares ou até bilhões de anos para chegar até nós. Observar o céu também significa olhar para diferentes momentos da história do universo.</p></div>
+</main>
+<footer><span>UNIVERSO EM FOCO</span><span>Ciência para quem gosta de descobrir.</span></footer>
+</body></html>
